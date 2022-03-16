@@ -4,6 +4,9 @@
 
 {{- $pt := default .Context.Title .Context.Params.meta.title -}}
 {{- $title := printf "%s · %s" $pt $DATA.meta.title -}}
+{{- if not $DATA.meta.title -}}
+  {{ $title = $pt }}
+{{- end -}}
 
 <meta charset="utf-8">
 <title>{{ $title }}</title>
