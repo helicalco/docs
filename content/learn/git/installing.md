@@ -126,4 +126,4 @@ Paste the SSH key with whatever title you want and hit Add SSH key.
 
 ### Finishing Up
 
-You're all set. Now you'll will be able to interact with github using git. Take a look at the [next tutorial](../using-git) to get started using git with github.
+You're all set. Now you'll will be able to interact with github using git. Take a look at the [next tutorial](../git-workflow) to get started using git with github.
