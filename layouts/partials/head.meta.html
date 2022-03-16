@@ -77,3 +77,13 @@
     data-key="{{ $DATA.algolia.apikey }}"
   ></script>
 {{- end -}}
+
+
+
+{{ $flexSearch := resources.Get "flexSearch.js" -}}
+<script src="{{ $flexSearch.RelPermalink }}" defer></script>
+
+
+{{ $indexTemplate := resources.Get "indexDocs.js" -}}
+{{ $index := $indexTemplate | resources.ExecuteAsTemplate "index.js" . -}}
+<script src="{{ $index.RelPermalink }}" defer></script>
