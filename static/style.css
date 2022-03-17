@@ -1031,7 +1031,7 @@ html {
   color: var(--code-orange);
 }
 [language="sh"] .CodeBlock--token-prompt {
-  color: var(--code-orange);
+  color: var(--helical-blue);
   opacity: 0.7;
 }
 [language="sh"] .CodeBlock--token-value {
@@ -2714,7 +2714,7 @@ html[is-docs-page] body {
   color: inherit;
   --background-color-rgb: var(--helical-blue-rgb);
   --background-color-alpha: 0.08;
-  --border-bottom-color-rgb: var(--orange-3-rgb);
+  --border-bottom-color-rgb: var(--orange-blue-rgb);
   --border-bottom-color-alpha: 0.3;
   --background-color: rgba(
     var(--background-color-rgb),
@@ -3609,7 +3609,7 @@ blockquote .DocsMarkdown--header-anchor-positioner {
   text-decoration: none;
   color: inherit;
   padding: 0.5rem var(--text-indent);
-  outline-color: var(--helical-blue   );
+  outline-color: var(--helical-blue);
 }
 
 #DocsSearch--suggestions a {

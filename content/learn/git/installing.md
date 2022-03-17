@@ -20,31 +20,31 @@ Now you'll want to install git on your pc. You can do this by installing the [Gi
 
 For command line install (Linux/Mac):
 
-```bash
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt update
-sudo apt install git
+```sh
+$ sudo add-apt-repository ppa:git-core/ppa
+$ sudo apt update
+$ sudo apt install git
 ```
 
 Once installed, you'll need to do a little bit of configurtion. Firstly, open your terminal and check that git is installed:
 
-```bash
-git --version
+```sh
+$ git --version
 ```
 
 You should see something like this:
 
-```bash
-git version 2.35.1
+```sh
+$ git version 2.35.1
 ```
 
 This means that git has sucessfully installed. If this didn't work, take a look at this [webpage](https://github.com/git-guides/install-git).
 
 Once installed, you can config git. First, set up git with your username and email address:
 
-```bash
-git config --global user.name "your_username"
-git config --global user.email "your_email@example.com"
+```sh
+$ git config --global user.name "your_username"
+$ git config --global user.email "your_email@example.com"
 ```
 
 Then you need to setup sshkeys on the computers you'll be using. Github has dropped support on http authentication, so you'll need to use ssh. For more information about github's http deprecation have a look [here](https://magecomp.com/blog/generate-personal-access-token-github/).
@@ -74,14 +74,14 @@ In windows this is found in Users/\<user\>/.ssh
 In linux it's found at ~/.ssh
 Change to ssh directory:
 
-```bash
-cd ~/.ssh
+```sh
+$ cd ~/.ssh
 ```
 
 Then list contents of directory:
 
-```bash
-ls
+```sh
+$ ls
 ```
 
 You're looking for a file name 'id_rsa.pub'. If you don't see this, you'll need to create one.
@@ -90,11 +90,11 @@ If you have one then skip this step.
 
 Create an ssh key by running this command:
 
-```bash
-ssh-keygen -C <youremail>
+```sh
+$ ssh-keygen -C <youremail>
 ```
 
-If it prompts for a place to save just push enter.  
+If it prompts for a place to save just push enter.
 Do the same for password (just push enter).
 
 ### Link ssh key to github
@@ -103,14 +103,16 @@ Copy your ssh key - found in previously mentioned locations.
 
 ##### Linux
 
-cat ~/.ssh/id_rsa.pub
+```sh
+$ cat ~/.ssh/id_rsa.pub
+```
 
 Highlight and copy the text.
 
 OR copy using the command
 
-```
-pbcopy < ~/.ssh/id_rsa.pub
+```sh
+$ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 ##### Windows
@@ -119,9 +121,9 @@ On windows you can do the same command from gitbash or find id_rsa.pub in Users/
 
 ### Add SSH Key to Github
 
-Go into settings in github.  
-Click on SSH and GPG keys on the left side bar.  
-Select new SSH key (green bubble to right).  
+Go into settings in github.
+Click on SSH and GPG keys on the left side bar.
+Select new SSH key (green bubble to right).
 Paste the SSH key with whatever title you want and hit Add SSH key.
 
 ### Finishing Up
