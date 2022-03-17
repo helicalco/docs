@@ -10,4 +10,6 @@ layout: list
 
 # Tutorials
 
+> The tutorials are currently a work in progress. Feel free to browse the existing content!
+
 {{</content-column>}}
