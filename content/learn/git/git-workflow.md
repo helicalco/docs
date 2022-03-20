@@ -119,11 +119,13 @@ Click on the green code button, then the ssh tab. Copy the link provided.
 ![github clone link](../images/github-clone-code.png)
 
 Using this link, head back to your terminal and within the empty directory you created, run the following command:
+
 ```sh
 $ git clone git@github.com:helical-tutorials/my-first-repository.git .
 ```
 
 If you don't want to create a directory yourself, you can just run:
+
 ```sh
 $ git clone git@github.com:helical-tutorials/my-first-repository.git directoryName
 ```
@@ -131,7 +133,9 @@ $ git clone git@github.com:helical-tutorials/my-first-repository.git directoryNa
 This will create a directory that contains the repository within it.
 
 Another option is to automatically create a directory with the same name as the github repository.
+
 ```sh
 $ git clone git@github.com:helical-tutorials/my-first-repository.git
 ```
 
+Great, you've successfully cloned your repository. You can now make changes to the files in the repository and push them to the remote repository.
