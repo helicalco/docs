@@ -6,15 +6,22 @@ meta:
   title: Git Workflow
 ---
 
+# Git Workflow
+### Initialize a Repository
+To get started, you'll want to create an empty repository.
 
+```sh
+$ git init
+```
 
-Now you want to create an empty repository on github.
+This will initialize a repository in the file you are currently in. If you want to initialize a repository in a new directory, you can pass an additional argument.
 
-Then login into the linux computer in R-block (if sshing in make sure you go to the lab jump then ssh again to the computer you want)
-From there go into your course_html file and type
-git init
+```sh
+$ git init /path/to/repository
+```
 
-This makes the current folder a git repository
+If the /path/to/repository does not exist, it will be created.
+
 
 Then you want to type
 git add .
