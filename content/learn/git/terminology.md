@@ -44,10 +44,13 @@ The inverse is the same - when changes are made to the remote repository, nothin
 
 When you have multiple branches in your local repository, you can checkout a branch to see the changes made to that branch. Basically, a way to switch between branches.
 
-### Commit
-
-When you commit something to your local repository, your changes will be stored in the current branch you are working on. Commits are like save points except each one of them are accessible to you, rather than the most recent one (traditional save point like MS Word or google docs). Although you can commit multiple times, the most recent one is the one that is accessible to you, unless you manually 'rollback'.
-
 ### Staging
 
-The Staging Area is where you can store your changes before you commit them. It is a temporary area that is not accessible to you.
+The Staging Branch is where you can store your changes before you commit them. It is a temporary area that is not accessible to you.
+
+### Commit
+
+When you commit something to your local repository, your changes will be stored in the current branch you are working on. You can choose which files to commit by adding them to the staging branch. Commits are like save points except each one of them are accessible to you, rather than the most recent one (traditional save point like MS Word or google docs). Although you can commit multiple times, the most recent one is the one that is accessible to you, unless you manually 'rollback'.
+
+### Upstream
+This is typically a reference to where you cloned the repository from (origin). Where you will push your changes.
