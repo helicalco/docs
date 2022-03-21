@@ -53,17 +53,23 @@ This will create a new branch based on the current branch and checkout to the ne
 
 Merging allows you to merge one branch into another. For instance, imagine you have a main branch, and you would like to implement a feature on it. You can create a new branch, implement and test the feature, and then merge it into the main branch.
 
-Before merging you want to make sure you are on the branch that you would like to merge into. You can use `git branch` to list all branches and look for a green highlighted and/or a asterisk next to a branch name. Another option is to use `git status` to see which branch you are on. At the top it will say `On branch <branch>`.
+Before merging you want to make sure you are on the branch that you would like to merge into. You can use `git branch` to list all branches and look for a green highlighted and/or an asterisk next to a branch name. Another option is to use `git status` to see which branch you are on. At the top it will say `On branch <branch>`.
 
 ### Fast-Forward Merging
 
-This is the most simple of all the merges. It can be done when no branch has diverged from each other. If you have a main branch and create a feature branch from main. You do some work to the feature branch, but main remains untouched. Then you want to merge feature into main, this would be a fast-forward merge. Main is simply being fast-forwarded up to the point where feature branch is.
+It can be done when no branch has diverged from each other. If you have a main branch and create a feature branch from main. You do some work to the feature branch, but main remains untouched. Then you want to merge feature into main, this would be a fast-forward merge. Main is simply being fast-forwarded up to the point where feature branch is.
 
 ```sh
 $ git merge <branch>
 ```
 
 An example of an entire process from branch to merge:
+
+```sh
+$ git merge <branch>
+```
+
+And an example from branch to merge:
 
 ```sh
 # Start a feature
@@ -129,6 +135,7 @@ The branch before `=======` is the receiving branch and after is merging branch.
 Once you have fixed up the conflicts by editing the files, you can use `git add` to add the corrected files. Then use `git commit` to create a merge commit.
 
 ## Pull
+
 ```sh
 $ git pull <remote> <branch>
 ```
@@ -136,6 +143,7 @@ $ git pull <remote> <branch>
 Will pull all changes from the remote branch into the current branch. If the local branch is tracking a remote branch, you can instead use `git pull` to pull the changes from the remote branch into the local branch.
 
 ## Push
+
 ```sh
 $ git push <remote> <branch>
 ```
@@ -143,6 +151,7 @@ $ git push <remote> <branch>
 Will push all committed changes to the remote branch. You can also add the `-u` flag, which will set the local branches upstream to the remote branch mentioned. This allows you to use `git pull` and `git push` without mentioning branch names in the future.
 
 ## git init
+
 ```sh
 $ git init
 ```
@@ -150,6 +159,7 @@ $ git init
 Creates a new repository in the current directory.
 
 ## git add
+
 ```sh
 $ git add <file>
 ```
@@ -157,31 +167,41 @@ $ git add <file>
 Adds file or files to the staging branch.
 
 ## git commit
+
 ```sh
 $ git commit -m "commit message"
 ```
+
 Commits file/files in the staging branch to the repository.
 
 ## git clone
+
 ```sh
 $ git clone <url>
 ```
+
 Clones a repository from a remote.
 
 ## git log
+
 ```sh
 $ git log <branch>
 ```
+
 Lists all commits in the branch.
 
 ## git status
+
 ```sh
 $ git status
 ```
+
 Shows the current branch you are on and additional information relative to the branch.
 
 ## git remove
+
 ```sh
 $ git rm <file>
 ```
+
 Removes file from the staging branch and stops tracking it.
