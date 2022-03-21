@@ -1,12 +1,12 @@
 ---
-title: Git Workflow
+title: Your First Repository
 pcx-content-type: tutorial
 weight: 2
 meta:
-  title: Git Workflow
+  title: Your First Repository
 ---
 
-# Git Workflow
+# Your First Repository
 
 ## Setup From Scratch
 
@@ -66,19 +66,19 @@ $ git commit -m "first commit"
 ### Linking to Github
 
 Now you need to setup a remote repository. Head over to [Github](https://github.com/) and create a repository. To do this, click on the `new` button in the top right corner of the right hand side bar.
-![new repository button](../images/github-new-repo-button.png)
+![new repository button](../media/github-new-repo-button.png)
 
 It will then ask for a name and an optional description. You will be given a choice between public and private. Public means anyone who comes across your github page can see your repository. Private means only you can see your repository. You can change this later.
 
-Below that are some options to initialize the repository with. Don't worry about these for now. Since a repository is already created locally, it can create issues with the initial push if the remote repo isn't empty.
+Below that are some options to initialize the repository with. Leave the options unchecked, if set they can create conflicts between your local and remote repository.
 
-![github repository options](../images/github-initialize-options.png)
+![github repository options](../media/github-initialize-options.png)
 
 ### Link Remote and Push
 
-You have now successfully created a repository on github. Now you need to link tohe remote repository to your local repository. You will see some commands in your newly created empty repository on github. Take a look at the ones regarding pushing an existing repository.
+You have now successfully created a repository on github. Now you need to link the remote repository to your local repository. You will see some commands in your newly created empty repository on github. Take a look at the ones regarding pushing an existing repository.
 
-![github connect local to remote](../images/github-connect-remote.png)
+![github connect local to remote](../media/github-connect-remote.png)
 
 Lets work through these commands.
 
@@ -86,13 +86,13 @@ Lets work through these commands.
 $ git remote add origin git@github.com:helical-tutorials/my-first-repository.git
 ```
 
-This will add a remote repository called `origin` to your local repository. This is the name of the remote repository. If you are to access anything branch directly on the remote, you prefix the branch name like `origin/<branch>` or `origin <branch>`. So this command links your local repository to the remote repository.
+This will add a remote repository called `origin` to your local repository. This is the name of the remote repository. If you are to access any branch directly on the remote, you prefix the branch name like `origin/<branch>` or `origin <branch>`. So this command links your local repository to the remote repository.
 
 ```sh
 $ git branch -M main
 ```
 
-You can ignore this command if you've downloaded git recently. Github used to have the primary/default branch called master. This will change the name of the default branch from master to main.
+You can ignore this command if you've downloaded git recently. Github used to have the default branch called master. This will change the name of the default branch from master to main.
 
 ```sh
 $ git push -u origin main
@@ -116,7 +116,7 @@ Firstly, you need to create a new directory to clone the repository into. Then h
 
 Click on the green code button, then the ssh tab. Copy the link provided.
 
-![github clone link](../images/github-clone-code.png)
+![github clone link](../media/github-clone-code.png)
 
 Using this link, head back to your terminal and within the empty directory you created, run the following command:
 
@@ -124,7 +124,7 @@ Using this link, head back to your terminal and within the empty directory you c
 $ git clone git@github.com:helical-tutorials/my-first-repository.git .
 ```
 
-If you don't want to create a directory yourself, you can just run:
+If you don't want to create a directory yourself, you can instead run:
 
 ```sh
 $ git clone git@github.com:helical-tutorials/my-first-repository.git directoryName

@@ -18,7 +18,7 @@ When you clone a repository you are creating a copy of the repository on your co
 
 ### Origin (Remote)
 
-An alias for the remote repository that is used to track changes - the repository you will typically clone from. It is the repository that is used to push and pull changes. It is a shared repository that all users can access and exchange their changes. Stored on a hosting service like github or gitlab.
+An alias for the remote repository that is used to track changes - the repository you will typically clone from, and then push and pull changes. It is a shared repository that all users can access and exchange their changes. Stored on a hosting service like github or gitlab.
 
 ### Main Branch
 
