@@ -7,6 +7,7 @@ meta:
 ---
 
 # Installing
+
 ## Why Version Control?
 
 Git is a version control system that allow you to track changes in your files and directories. It makes it extremely easy to collaborate as it allows changes by multiple people to be merged into one. It works by having a centerally located place where all the changes are stored - github/gitlab. This is often called origin. Then users can clone the repository down to what is called a local version, and make changes to the files. When they are done they can push their changes to the origin.
@@ -122,10 +123,14 @@ On windows you can do the same command from gitbash or find id_rsa.pub in Users/
 
 ### Add SSH Key to Github
 
-Go into settings in github.
-Click on SSH and GPG keys on the left side bar.
-Select new SSH key (green bubble to right).
-Paste the SSH key with whatever title you want and hit Add SSH key.
+1. Go into settings in github.
+![github-settings](../media/github-settings.png)
+2. Click on SSH and GPG keys on the left side bar.
+![github-ssh-tab](../media/github-ssh-tab.png)
+3. Select new SSH key (green bubble to right).
+![github-new-ssh](../media/github-new-ssh.png)
+4. Paste the SSH key with whatever title you want and hit Add SSH key.
+![github-added-ssh](../media/github-added-ssh.png)
 
 ### Finishing Up
 
