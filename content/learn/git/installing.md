@@ -6,6 +6,7 @@ meta:
   title: Installing Git
 ---
 
+# Installing
 ## Why Version Control?
 
 Git is a version control system that allow you to track changes in your files and directories. It makes it extremely easy to collaborate as it allows changes by multiple people to be merged into one. It works by having a centerally located place where all the changes are stored - github/gitlab. This is often called origin. Then users can clone the repository down to what is called a local version, and make changes to the files. When they are done they can push their changes to the origin.
