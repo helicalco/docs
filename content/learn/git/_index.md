@@ -1,7 +1,7 @@
 ---
 pcx-content-type: navigation
 title: Using Git
-weight: 1
+weight: 2
 ---
 
 # Git
