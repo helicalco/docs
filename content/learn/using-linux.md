@@ -68,6 +68,32 @@ Not much will happen differently from cat when using column with no flags. Two i
 $ column [file] -t -s ','
 ```
 
+For example, you could have a genotype_report.txt file that looks likes this:
+
+```
+ID CallRate #AA #AB #BB #NC %AA %AB %BB %NC
+27813162 0.185837 141 192 142 2081 0.06 0.08 0.06 0.81
+30282025 0.185837 115 240 120 2081 0.04 0.09 0.05 0.81
+21928702 0.996870 596 951 1001 8 0.23 0.37 0.39 0.00
+27942765 0.241393 142 292 183 1939 0.06 0.11 0.07 0.76
+```
+
+Which is a little hard to track columns. Using:
+
+```sh
+$ column -t -s ' ' genotype_report.txt
+```
+
+Which is to say `-t` make a table, `-s ' '` seperate on spaces, and `genotype_report.txt` is the file to be read. We get:
+
+```
+ID        CallRate  #AA  #AB  #BB   #NC   %AA   %AB   %BB   %NC
+27813162  0.185837  141  192  142   2081  0.06  0.08  0.06  0.81
+30282025  0.185837  115  240  120   2081  0.04  0.09  0.05  0.81
+21928702  0.996870  596  951  1001  8     0.23  0.37  0.39  0.00
+27942765  0.241393  142  292  183   1939  0.06  0.11  0.07  0.76
+```
+
 ### echo
 
 Echo is used to print text to the standard output.
