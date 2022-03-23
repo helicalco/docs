@@ -215,13 +215,13 @@ $ wc [options] [file]
 For example:
 
 ```sh
-$wc myFile.txt
+$wc pedigree.txt
 ```
 
 Will look something like this:
 
 ```
-397 4222 22566 /proc/cpuinfo
+397 4222 22566 /pedigree.txt
 ```
 
 - 397 is the number of lines.
@@ -236,9 +236,71 @@ You can also pass in multiple files.
 - -w, --words - Print the number of words.
 - -m, --chars - Print the number of characters.
 - -c, --bytes - Print the number of bytes.
-  awk
-  join
 
+### awk
+
+Awk is a language that can be used to manipulate text files. It is useful for transforming data files and producing formatted reports.
+
+The syntax is:
+
+```sh
+$awk options 'selection criteria' [input-file] > [output-file]
 ```
 
+For example, lets say you have this pedigree file:
+
+```
+9997515 5017534 7651593
+9939593 5765357 6245551
+9998766 5455357 7736346
+9954672 5017534 6245551
+9999762 5455357 6245551
+```
+
+To print out the file:
+
+```sh
+$ awk '{print}' pedigree.txt
+```
+
+If you wanted to see every line with a certain id, you could do this:
+
+```sh
+$ awk '{if ($1 == "9997515") print}' pedigree.txt
+```
+
+Outputs:
+
+```
+9997515 5017534 7651593
+```
+
+Imagine you wanted to find the id of an animal that had two certain parents. You could do this:
+
+```sh
+$ awk '{if($2 == "5017534" && $3 == "7651593") {print}}' pedigree.txt
+```
+
+Outputs:
+
+```
+9997515 5017534 7651593
+```
+
+If you only want to print certain columns, you can use the $0, $1, $2 ....
+$0 means to print every column, then $1, $n, denotes each column from 1 to n.
+For example:
+
+```sh
+$ awk '{print $1}' pedigree.txt
+```
+
+Outputs:
+
+```
+9997515
+9939593
+9998766
+9954672
+9999762
 ```
