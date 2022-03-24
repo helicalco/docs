@@ -42,7 +42,7 @@ $ ls
 Running ls with -s flag will list files or directories with their sizes (in kilobytes).
 
 ```sh
-$ ls -s [directory]
+$ ls -s
 ```
 
 ### cat
