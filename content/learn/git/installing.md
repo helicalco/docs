@@ -134,4 +134,4 @@ On windows you can do the same command from gitbash or find id_rsa.pub in Users/
 
 ### Finishing Up
 
-You're all set. Now you'll will be able to interact with github using git. Take a look at the [next tutorial](../git-workflow) to get started using git with github.
+You're all set. Now you'll will be able to interact with github using git. Take a look at the [next tutorial](../your-first-repository) to get started using git with github.
