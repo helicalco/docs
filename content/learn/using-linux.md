@@ -33,13 +33,12 @@ Wildcard matches all files.
 
 ### ls
 
-Lists the contents of the specified directory.
+Lists the contents of the current directory.
 
 ```sh
-$ ls [directory]
+$ ls
 ```
 
-Can also just run `ls` alone and it will list the current directory.
 Running ls with -s flag will list files or directories with their sizes (in kilobytes).
 
 ```sh
@@ -48,7 +47,7 @@ $ ls -s [directory]
 
 ### cat
 
-Concatenate reads the contents of a file and prints it to the standard output.
+Concatenate reads the contents of a file and prints it to the terminal.
 
 ```sh
 $ cat [file]
@@ -59,16 +58,18 @@ $ cat [file]
 Column is super helpful when dealing with csv or any table formated files.
 
 ```sh
-$ column [file]
+$ column -t [file]
 ```
 
-Not much will happen differently from cat when using column with no flags. Two important flags are `-t` and `-s`. `-t` is used to create a table by determining the number of columns. `-s` defines the column delimiter. Using these together will format the output in a table.
+The `-s` defines the column delimiter.
+
+When dealing with CSV files, make sure to provide the `-n` flag too which prevents adjacent delimiters being merged.
 
 ```sh
-$ column [file] -t -s ','
+$ column -t -n -s ',' [file]
 ```
 
-For example, you could have a genotype_report.txt file that looks likes this:
+For example, you could have a `genotype_report.txt` file that looks likes this:
 
 ```
 ID CallRate #AA #AB #BB #NC %AA %AB %BB %NC
@@ -81,10 +82,10 @@ ID CallRate #AA #AB #BB #NC %AA %AB %BB %NC
 Which is a little hard to track columns. Using:
 
 ```sh
-$ column -t -s ' ' genotype_report.txt
+$ column -t genotype_report.txt
 ```
 
-Which is to say `-t` make a table, `-s ' '` seperate on spaces, and `genotype_report.txt` is the file to be read. We get:
+We get:
 
 ```
 ID        CallRate  #AA  #AB  #BB   #NC   %AA   %AB   %BB   %NC
@@ -92,14 +93,6 @@ ID        CallRate  #AA  #AB  #BB   #NC   %AA   %AB   %BB   %NC
 30282025  0.185837  115  240  120   2081  0.04  0.09  0.05  0.81
 21928702  0.996870  596  951  1001  8     0.23  0.37  0.39  0.00
 27942765  0.241393  142  292  183   1939  0.06  0.11  0.07  0.76
-```
-
-### echo
-
-Echo is used to print text to the standard output.
-
-```sh
-$ echo [string]
 ```
 
 ### find
@@ -115,8 +108,7 @@ Above command will find all files with the extension `.md` in the `Documents` di
 
 ### grep
 
-Stands for - Globally search for a Regular Expression and Print it out.
-Preforms text searchs for a defined pattern.
+Finds all occurences of text in a file.
 
 ```sh
 $ grep [string/pattern] [files]
@@ -130,25 +122,15 @@ Helpful flags:
 - `-c`: Count the number of matches.
 - `-n`: Print the line number of each match.
 
-### history
-
-Outputs your recent commands with numbers to identify them.
-
-```sh
-$ history
-```
-
-You can run a command again by using `!` and the number of the command `!5`.
-
 ### |
 
 Pipe allows you to run multiple commands in a single command. It pipes the standard output of one command into the standard input of the next command.
 
 ```sh
-$ hisory | grep cd
+$ cat pedigree.txt | column -t
 ```
 
-The above command would list the history which would pipe into grep. Grep would then search for `cd` and output every command you've made with cd.
+The above example would print the file out and pipe the contents into `column`, which would then format the file.
 
 ### head
 
@@ -170,16 +152,10 @@ $ man [command]
 
 ### mkdir
 
-Creates directories.
+Creates a new directory.
 
 ```sh
-$ mkdir [directories]
-```
-
-`-p` flag will create parent as necessary ie. can create 3 directories one inside the next.
-
-```sh
-$ mkdir -p dir1/dir2/dir3
+$ mkdir [my-directory]
 ```
 
 ### mv
