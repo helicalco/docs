@@ -1,7 +1,7 @@
 ---
 title: Terminology
 pcx-content-type: tutorial
-weight: 1
+weight: 4
 meta:
   title: Terminology
 ---
@@ -53,4 +53,5 @@ The Staging Branch is where you can store your changes before you commit them. I
 When you commit something to your local repository, your changes will be stored in the current branch you are working on. You can choose which files to commit by adding them to the staging branch. Commits are like save points except each one of them are accessible to you, rather than the most recent one (traditional save point like MS Word or google docs). Although you can commit multiple times, the most recent one is the one that is accessible to you, unless you manually 'rollback'.
 
 ### Upstream
+
 This is typically a reference to where you cloned the repository from (origin). Where you will push your changes.
