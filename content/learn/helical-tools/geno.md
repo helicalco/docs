@@ -14,13 +14,13 @@ meta:
 
 A file that holds the genotype data for animals. It is arranged in a matrix where each row represents a different animal and each column represents a different marker (SNP). The first column will be an identifier for the animal.
 
-<a href="../../../downloads/genos" download>Here</a> is the sample geno file we will be using for this tutorial.
+<a href="./../../../geno/genos" download>Here</a> is the sample geno file we will be using for this tutorial.
 
 ### .map File
 
 Pairs with a .geno file and holds information about the markers. The first column is an identifier for the marker. The second column is the chromosome number. The third column is the position on the chromosome.
 
-<a href="../../../downloads/genos.map" download>Here</a> is the sample map file we will be using for this tutorial.
+<a href="./../../../geno/genos.map" download>Here</a> is the sample map file we will be using for this tutorial.
 
 ## Analyse
 
