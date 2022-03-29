@@ -14,7 +14,7 @@ This tutorial will walk you through the process of running `helical geno` comman
 
 ### genotype File
 
-A file that holds the genotype data for animals. It is arranged in a matrix where each row represents a different animal and each column represents a different marker (SNP). The first column will be an identifier for the animal.
+A file that holds the genotype data for animals. It is arranged in a matrix where each row represents a different animal and each column represents a different marker (SNP). The first column is the animal identifier.
 
 <a href="/geno/genos" download>Here</a> is the sample geno file we will be using for this tutorial.
 
