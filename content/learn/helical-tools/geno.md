@@ -10,7 +10,7 @@ meta:
 
 ## Getting Started
 
-This tutorial will walk you through the process of running geno commands. We will begin with analysing a geno file and understanding the different files that are created. To begin, download the geno file below.
+This tutorial will walk you through the process of running `helical geno` commands. We will begin with analysing a geno file and understanding the different files that are created. To begin, download the genotypes file below. This file is not a representation of any population. It is a generated file.
 
 ### genotype File
 
@@ -89,7 +89,7 @@ $ cat snp_report.txt
 
 This will yield the output we want, but it'll be in poor format. This is a good example of how `column` comes in handy.
 
-```sh
+```shU
 $ column -t snp_report.txt
 ```
 
@@ -100,6 +100,7 @@ SnpID     MAF   #AA  #AB  #BB  #NC  %AA   %AB   %BB   %NC
 SNP00001  0.33  4    5    4    7    0.20  0.25  0.20  0.35
 SNP00002  0.53  7    7    4    2    0.35  0.35  0.20  0.10
 SNP00003  0.28  3    5    7    5    0.15  0.25  0.35  0.25
+...
 ```
 
 This file shows the number of alleles, their proportions and the minor allele frequency for each snp.
@@ -114,6 +115,7 @@ ID      CallRate  #AA  #AB  #BB  #NC  %AA   %AB   %BB   %NC
 geno19  0.660000  11   9    13   17   0.22  0.18  0.26  0.34
 geno15  0.740000  11   6    20   13   0.22  0.12  0.40  0.26
 geno6   0.840000  15   17   10   8    0.30  0.34  0.20  0.16
+...
 ```
 
 And finally, there is outliers.txt, which shows the individuals who's mean of any snp count falls outside 2 standard deviations of the mean.
