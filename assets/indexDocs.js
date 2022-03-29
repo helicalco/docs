@@ -94,10 +94,11 @@ Source:
   // https://discourse.gohugo.io/t/range-length-or-last-element/3803/2
 
   {{ $list := .Context.Site.RegularPages -}}
-  {{ $len := (len $list) -}}
+  {{ $pages := where $list ".File.Path" "not in" (slice "404.html") }}
+  {{ $len := (len $pages) -}}
 
   index.add(
-    {{ range $index, $element := $list -}}
+    {{ range $index, $element := $pages -}}
       {
         id: {{ $index }},
         href: "{{ .RelPermalink }}",
