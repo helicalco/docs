@@ -1,9 +1,11 @@
 ---
 pcx-content-type: navigation
-title: Using Git
+title: Statistics
 weight: 2
 ---
 
-# Git
+# Statistics
 
 {{<directory-listing>}}
+
+
