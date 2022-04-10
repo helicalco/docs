@@ -1,9 +1,9 @@
 ---
 pcx-content-type: navigation
-title: Using Git
-weight: 2
+title: Interpretation
+weight: 1
 ---
 
-# Git
+# Interpretation
 
 {{<directory-listing>}}
