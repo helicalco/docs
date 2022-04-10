@@ -1,11 +1,9 @@
 ---
 pcx-content-type: navigation
-title: Matrices
+title: Analysis
 weight: 2
 ---
 
-# Matrices
+# Analysis
 
 {{<directory-listing>}}
-
-
