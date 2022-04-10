@@ -1,9 +1,9 @@
 ---
 pcx-content-type: navigation
-title: In Practice
-weight: 2
+title: Interpretation
+weight: 1
 ---
 
-# In Practice
+# Interpretation
 
 {{<directory-listing>}}

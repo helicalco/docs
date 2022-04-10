@@ -1,7 +1,7 @@
 ---
 pcx-content-type: navigation
 title: Genetics
-weight: 2
+weight: 1
 ---
 
 # Genetics

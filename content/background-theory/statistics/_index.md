@@ -1,7 +1,7 @@
 ---
 pcx-content-type: navigation
 title: Statistics
-weight: 2
+weight: 1
 ---
 
 # Statistics

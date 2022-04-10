@@ -1,7 +1,7 @@
 ---
 title: Introduction to Statistics
 pcx-content-type: tutorial
-weight: 2
+weight: 1
 meta:
   title: Introduction to Statistics
 ---

@@ -1,7 +1,7 @@
 ---
 title: Multiple Trait Models
 pcx-content-type: tutorial
-weight: 2
+weight: 3
 meta:
   title: Multiple Trait Models
 ---

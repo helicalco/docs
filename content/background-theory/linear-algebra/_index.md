@@ -1,7 +1,7 @@
 ---
 pcx-content-type: navigation
 title: Linear Algebra
-weight: 2
+weight: 1
 ---
 
 # Linear Algebra

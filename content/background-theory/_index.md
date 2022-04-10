@@ -1,7 +1,7 @@
 ---
 pcx-content-type: navigation
 title: Background Theory
-weight: 2
+weight: 1
 ---
 
 # Background Theory

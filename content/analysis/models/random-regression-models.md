@@ -1,7 +1,7 @@
 ---
 title: Random Regression Models
 pcx-content-type: tutorial
-weight: 2
+weight: 4
 meta:
   title: Random Regression Models
 ---
