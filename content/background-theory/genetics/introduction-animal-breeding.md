@@ -45,7 +45,7 @@ meta:
 A trait is influence by an infinitely large number of genes, which make an infinitely small contribution to the phenotype.
 
 - How do genetic evaluation models take this into account?
-    - They assume that there are an infinite number of loci affecting each trait called quantitative trail loci (QTL). The goal is to estimate the combined effect of all loci for each trait on each animal.
+    - They assume that there are an infinite number of loci affecting each trait called quantitative trait loci (QTL). The goal is to estimate the combined effect of all loci for each trait on each animal.
 - What is a major gene
     - Individual loci that have large effects on trait
         - Costs to much to use in current models and there are still questions as to minor genes influencing major genes
@@ -111,7 +111,7 @@ Suppose there is a gene locus that contributes to the growth of animals. Assume 
 
 ## Breeding Objective
 
-- A function of the traits that are to be change.
+- A function of the traits that are to be changed.
 - H = $v_1T_1+v_2T_2+v_3T_3+v_4T_4+v_5T_5$
     
     Where $v_i$ are relative economic values for each trait and $T_i$ are the true breeding values for those traits. Note T will be unknown
