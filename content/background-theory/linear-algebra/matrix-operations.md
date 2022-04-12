@@ -7,3 +7,23 @@ meta:
 ---
 
 # Matrix Operations
+
+## Transposition
+
+## Diagonals
+
+## Addition of Matrices
+
+## Multiplication of Matrices
+
+## Traces of Square Matrices
+
+## Direct Sum of Matrices
+
+## Kronecker Product
+
+## Matrix Inversion
+
+### Determinant of a Matrix
+
+### Inverse of an Inverse
